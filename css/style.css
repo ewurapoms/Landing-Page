@@ -210,3 +210,76 @@ footer {
     padding: 10px;
     background-color: none;
 }
+
+/* Reset some default margin and padding */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a max-width for the entire page content */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Add a responsive font size */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px or less */
+
+  .wrapper {
+    padding: 10px;
+  }
+
+  /* Adjust header styles for smaller screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100%; /* Make the logo take up 100% of the width */
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  /* Adjust hero-info styles for smaller screens */
+  .hero-info {
+    flex-basis: 100%; /* Make the hero-info take up 100% of the width */
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  /* Adjust features styles for smaller screens */
+  #features {
+    padding: 20px 0;
+  }
+
+  /* Adjust about styles for smaller screens */
+  #about {
+    padding: 20px 0;
+  }
+
+  /* Adjust contact styles for smaller screens */
+  #contact {
+    padding: 20px 0;
+  }
+
+  /* Adjust social links styles for smaller screens */
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
