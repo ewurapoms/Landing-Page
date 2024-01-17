@@ -228,58 +228,83 @@ html {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  /* Adjust styles for screens with a maximum width of 768px or less */
+/* Adjust styles for laptops and desktops */
+@media (min-width: 769px) {
+  .wrapper {
+    padding: 20px;
+  }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero-info {
+    flex-basis: 50%;
+  }
+
+  #features,
+  #about,
+  #contact {
+    padding: 50px 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Adjust styles for tablets */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  .hero-info {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+/* Adjust styles for phones */
+@media (max-width: 480px) {
   .wrapper {
     padding: 10px;
   }
 
-  /* Adjust header styles for smaller screens */
-  header {
+  nav {
     flex-direction: column;
     align-items: center;
-  }
-
-  .logo {
-    width: 100%; /* Make the logo take up 100% of the width */
-    margin-bottom: 10px;
-  }
-
-  nav {
-    margin-top: 10px;
   }
 
   nav ul {
     text-align: center;
   }
 
-  /* Adjust hero-info styles for smaller screens */
   .hero-info {
-    flex-basis: 100%; /* Make the hero-info take up 100% of the width */
+    flex-basis: 100%;
     text-align: center;
     margin: 20px 0;
   }
 
-  /* Adjust features styles for smaller screens */
-  #features {
-    padding: 20px 0;
-  }
-
-  /* Adjust about styles for smaller screens */
-  #about {
-    padding: 20px 0;
-  }
-
-  /* Adjust contact styles for smaller screens */
+  #features,
+  #about,
   #contact {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
-  /* Adjust social links styles for smaller screens */
   .social-links {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
