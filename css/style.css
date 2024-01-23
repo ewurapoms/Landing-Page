@@ -91,7 +91,7 @@ section {
 
 /* Content */
 .wrapper {
-    background: url('./pic.png') no-repeat center center / cover;
+    background: url('./images/pic.png') no-repeat center center / cover;
     width: 100%;
     display: block;
     position: relative;
